@@ -637,9 +637,9 @@ body {
 }
 
 .instagram-logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
+  width: 25px;
+  height: 25px;
+  border-radius: 6px;
   transition: all 0.3s ease;
 }
 
@@ -651,8 +651,8 @@ body {
   }
   
   .instagram-logo {
-    width: 35px;
-    height: 35px;
+    width: 22px;
+    height: 22px;
   }
 }
 
