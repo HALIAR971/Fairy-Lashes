@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fairy Lashes - Extension de Cils</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#header">Accueil</a></li>
+        <li><a href="#presentation">Présentation</a></li>
+        <li><a href="#services">Nos Services</a></li>
+        <li><a href="#reservation">Réservation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  <header class="header" id="header">
+    <div class="container">
+      <img src="images/logo.png" alt="Fairy Lashes Logo" class="header-logo">
+      <h1 class="logo">Fairy Lashes</h1>
+      <p class="tagline">Sublimez votre regard avec des extensions sur mesure</p>
+    </div>
+  </header>
+
+  
+
+  <!-- ...existing code... -->
+
+<section id="presentation" class="presentation">
+    <div class="container">
+      <div class="presentation-content">
+        <div class="presentation-text">
+          <h2 class="section-title">Bienvenue chez Fairy Lashes</h2>
+          <p>
+            Chez Fairy Lashes, nous croyons que chaque regard mérite d'être sublimé. Nos extensions de cils sont conçues pour offrir une beauté naturelle et élégante, tout en ajoutant une touche de glamour à votre quotidien. Que vous recherchiez un look discret ou un effet plus volumineux, nos experts sont là pour vous offrir un service personnalisé et de haute qualité. Rejoignez-nous et découvrez la magie de Fairy Lashes.
+          </p>
+        </div>
+        <div class="presentation-image">
+          <img src="images/beautiful.jpg" alt="Fairy Lashes">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!--
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">Nos Services</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <img src="images/classique.jpg" alt="Extension Classique">
+          <h3>Extension Classique</h3>
+          <p>Un look naturel avec des cils légers et élégants.</p>
+        </div>
+        <div class="service-item">
+          <img src="images/volume.jpg" alt="Volume Russe">
+          <h3>Volume Russe</h3>
+          <p>Des cils volumineux pour un effet glamour intense.</p>
+        </div>
+        <div class="service-item">
+          <img src="images/retouches.jpg" alt="Retouches">
+          <h3>Retouches</h3>
+          <p>Pour maintenir la perfection de vos cils.</p>
+        </div>
+      </div> -->
+  
+      <section id="services" class="services">
+        <div class="container">
+          <h2 class="section-title">Nos Services</h2>
+          <div class="service-grid">
+            <div class="service-item">
+              <img src="images/faux-cils.png" alt="Extensions de cils">
+              <h3>Extensions de cils</h3>
+              <ul>
+                <li>Pose naturelle 50€</li>
+                <li>Pose mixte 60€</li>
+                <li>Pose volume 65€</li>
+                <li>Pose volume intense 70€</li>
+                <li>Pose méga volume 90€</li>
+                <li>Cils couleurs, paillettés +5€</li>
+                <li>Effet Wispy +10€</li>
+
+
+
+              </ul>
+            </div>
+            <div class="service-item">
+              <img src="images/cils.png" alt="Volume Russe">
+              <h3>Remplissage</h3>
+              <ul>
+                <li>Pose naturelle 35€</li>
+                <li>Pose mixte 45€</li>
+                <li>Pose Volume 50€</li>
+                <li>Pose Volume intense 55€</li>
+                <li>Pose Volume 50€</li>
+                <li>Pose mega Volume 75€</li>
+
+
+
+              </ul>
+            </div>
+            <div class="service-item">
+              <img src="images/cil.png" alt="Retouches">
+              <h3>Dépose</h3>
+              <ul>
+                <li>Dépose seule/ Dépose extérieure 15€</li>
+                <li>Dépose suivie d'une pose 10€</li>
+              </ul>
+            </div>
+            <div class="service-item">
+              <img src="images/epilation (1).png" alt="Extension Classique">
+              <h3>Epilation à la cire</h3>
+              <ul>
+                <li>Aiselle 15€</li>
+                <li>Jambes 1/2 15€</li>
+                <li>Jambes complète 25€</li>
+                <li>Sourcils 10€</li>
+
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+
+  
+ 
+
+  <!-- ...existing code... -->
+
+<section id="reservation" class="reservation">
+    <div class="container">
+      <h2 class="section-title">Réservez un rendez-vous</h2>
+      <p class="section-description">Choisissez une date et une heure via notre calendrier intégré.</p>
+      <div id="calendly-widget">
+        
+        <iframe
+          src="https://calendly.com/haliarobed/fairy-lashes"
+          style="min-width:320px;height:630px;"
+          width="80%"
+          height="530"
+          frameborder="0"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contactez-nous</h2>
+      <form id="contact-form" action="submit_form.php" method="post">
+        <div class="form-group">
+          <label for="name">Nom:</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Votre email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" placeholder="Votre message" required></textarea>
+        </div>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+  
+  <!-- ...existing code... -->
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Fairy Lashes. Tous droits réservés.</p>
+    </div>
+  </footer>
+<!-- ...existing code... -->
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        const target = document.querySelector(this.getAttribute('href'));
+        const targetPosition = target.getBoundingClientRect().top;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition;
+        const duration = 1000; // Durée de 2 secondes
+        let start = null;
+  
+        window.requestAnimationFrame(step);
+  
+        function step(timestamp) {
+          if (!start) start = timestamp;
+          const progress = timestamp - start;
+          const yOffset = Math.min(progress / duration, 1) * distance;
+          window.scrollTo(0, startPosition + yOffset);
+          if (progress < duration) {
+            window.requestAnimationFrame(step);
+          }
+        }
+      });
+    });
+
+    
+    // l'appel à l'API Calendly
+    fetch('https://api.calendly.com/scheduled_events', {
+      method: 'GET',
+      headers: {
+        'Authorization': 'Bearer AUAFXHHUPSZPTKRKNIDS55U6KOQKZ7ZM',
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Erreur:', error));
+  </script>
+</body>
+</html>
+
+
+
+
+  </script>
+ 
+
+
+</body>
+</html>
