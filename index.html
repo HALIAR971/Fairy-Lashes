@@ -14,6 +14,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="images/logo.ico">
   
   <link rel="stylesheet" href="styles.css">
+  <script defer src="config.js"></script>
   <script defer src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -202,55 +203,5 @@
       </div>
     </div>
   </footer>
-<!-- ...existing code... -->
-<script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-  
-        const target = document.querySelector(this.getAttribute('href'));
-        const targetPosition = target.getBoundingClientRect().top;
-        const startPosition = window.pageYOffset;
-        const distance = targetPosition;
-        const duration = 1000; // Durée de 2 secondes
-        let start = null;
-  
-        window.requestAnimationFrame(step);
-  
-        function step(timestamp) {
-          if (!start) start = timestamp;
-          const progress = timestamp - start;
-          const yOffset = Math.min(progress / duration, 1) * distance;
-          window.scrollTo(0, startPosition + yOffset);
-          if (progress < duration) {
-            window.requestAnimationFrame(step);
-          }
-        }
-      });
-    });
-
-    
-    // l'appel à l'API Calendly
-    fetch('https://api.calendly.com/scheduled_events', {
-      method: 'GET',
-      headers: {
-        'Authorization': 'Bearer AUAFXHHUPSZPTKRKNIDS55U6KOQKZ7ZM',
-        'Content-Type': 'application/json'
-      }
-    })
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.error('Erreur:', error));
-  </script>
-</body>
-</html>
-
-
-
-
-  </script>
- 
-
-
 </body>
 </html>
